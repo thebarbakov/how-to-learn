@@ -19,6 +19,10 @@
   /* выше установили ограничения для секции */
 }
 
+.global_link::after {
+  content: ' →';
+}
+
 .logo {
   width: 183px;
 }
@@ -59,10 +63,7 @@ font-size: 18px;
 font-weight: normal;
 line-height: 25px;
 z-index: 3;
-}
-
-.header__link::after {
-  content: ' →';
+margin: 0;
 }
 
 .header__link {
@@ -109,6 +110,7 @@ z-index: 3;
   line-height: 1.2;
   font-weight: normal;
   color: #2f90ed;
+  margin: 0;
 }
 
 .two-columns__main-text {
@@ -120,11 +122,11 @@ z-index: 3;
 }
 
 .two-columns__paragraph {
-  margin-bottom: 30px;
+  margin:0 auto 30px auto;
 }
 
 
-.two-columns__main-text:last-of-type {
+.two-columns__paragraph:last-of-type {
   margin-bottom: 0px;
 }
 
@@ -146,6 +148,7 @@ z-index: 3;
   font-weight: bold;
   justify-content: center;
   margin-bottom: 0;
+  margin-top: 0;
 }
 
 .section-title_space_top-l {
@@ -163,6 +166,7 @@ z-index: 3;
   line-height: 34px;
   font-weight: normal;
   justify-content: center;
+  margin: 0;
 }
 
 .table {
@@ -180,24 +184,26 @@ z-index: 3;
 
 .table__cell {
   width: 250px;
-  margin-bottom: 80px;
+  margin-bottom: 60px;
 }
 
 .table__heading {
   font-size: 24px;
   line-height: 1.15;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin: 0 auto 20px auto;
 }
 
 .table__text {
   font-size: 18px;
   line-height: 1.2;
   font-weight: normal;
+  margin: 0;
 }
 
 .table__text_type_author {
-  margin-top: 20px;
+  margin: 20px auto 0 auto;
+
 }
 
 .feynman {
@@ -225,7 +231,7 @@ z-index: 3;
 }
 
 .feynman__subtitle {
-  margin-top: 70px;
+  margin: 70px auto 0 auto;
   font-size: 36px;
   line-height: 51px;
   font-weight: normal
@@ -253,7 +259,10 @@ z-index: 3;
   position: relative;
   overflow: hidden;
 }
-
+.table_theme_dark {
+  padding-top: 80px;
+  margin-bottom: 90px;
+}
 .section-title_theme_dark {
   color: white;
   z-index: 9;
@@ -265,6 +274,7 @@ z-index: 3;
 }
 .section-subtitle_theme_dark {
   color: white;
+  margin: 20px auto 0 auto;
   z-index: 9;
 }
 
@@ -272,8 +282,12 @@ z-index: 3;
   width: 200px;
   color: white;
   margin-right: 0;
-  margin-top: 80px;
+  margin-bottom: 80px;
   z-index: 9;
+}
+
+.table__cell_space_bottom_zero {
+  margin-bottom: 0;
 }
 
 .kaufman__triangle {
@@ -322,7 +336,7 @@ z-index: 3;
 }
 
 .footer__author {
-  padding: 18px 0;
+  margin: 18px 0;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
