@@ -339,14 +339,6 @@ z-index: 3;
   line-height: 30px;
 }
 
-.footer__column_content_info {
-  display: flex;
-}
-
-.footer__column_content_social{
-  display: flex;
-}
-
 .footer__column-links {
   font-size: 18px;
   line-height: 30px;
