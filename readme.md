@@ -1,6 +1,7 @@
 # How to Learn 
 ------------------
 ![Screenshot of page](images/how-to-learn.png)
+[Ссылка на страницу](https://thebarbakov.github.io/how-to-learn/)
 ***
 
 Доработка проектной работы How to learn. Страница о том, как необходимо учиться. 
